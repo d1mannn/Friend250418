@@ -14,6 +14,14 @@ private:
 	int age;
 	string gender;
 	string faculty;
-	friend ostream& operator >> (istream& in, Teacher &teacer);
+	//friend istream& operator >> (istream& in, Teacher &teacher); // нужно его дописать поток ввода
+	friend bool operator == (Teacher obj1, Teacher obj2);
+	friend bool operator == (string & str, Teacher obj);
+	friend bool operator != (Teacher obj1, Teacher obj2);
+	friend bool operator != (string & str, Teacher obj);
+	friend bool operator > (Teacher obj1, Teacher obj2);
+	friend bool operator > (int & str, Teacher obj);
+	friend bool operator < (Teacher obj1, Teacher obj2);
+	friend bool operator < (int & str, Teacher obj);
 };
 

@@ -25,6 +25,7 @@ int main()
 	cout << (student[0] < 18) << endl;
 	cout << (student[0] < 18) << endl;
 	cout <<( student[0] > student[1]) << endl;
+	in_file.close();
 	delete[]student;
 	system("pause");
 	return 0;

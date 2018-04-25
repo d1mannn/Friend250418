@@ -36,4 +36,42 @@ Teacher::Teacher(const Teacher &obj)
 	
 }
 
+bool operator == (Teacher obj1, Teacher obj2)
+{
+	return (obj1.gender == obj2.gender);
+}
 
+bool operator == (string & str, Teacher obj)
+{
+	return(str == obj.gender);
+}
+
+bool operator != (Teacher obj1, Teacher obj2)
+{
+	return (obj1.gender != obj2.gender);
+}
+
+bool operator != (string & str, Teacher obj)
+{
+	return(str != obj.gender);
+}
+
+bool operator > (Teacher obj1, Teacher obj2)
+{
+	return (obj1.age > obj2.age);
+}
+
+bool operator > (int & str, Teacher obj)
+{
+	return(str > obj.age);
+}
+
+bool operator < (Teacher obj1, Teacher obj2)
+{
+	return (obj1.age > obj2.age);
+}
+
+bool operator < (int & str, Teacher obj)
+{
+	return(str > obj.age);
+}
