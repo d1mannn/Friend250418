@@ -122,7 +122,9 @@
     <ClInclude Include="Teacher.h" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="Exam.txt" />
     <Text Include="in.txt" />
+    <Text Include="teacher.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

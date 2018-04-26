@@ -61,17 +61,39 @@ bool operator > (Teacher obj1, Teacher obj2)
 	return (obj1.age > obj2.age);
 }
 
-bool operator > (int & str, Teacher obj)
+bool operator > (int str, Teacher obj)
 {
 	return(str > obj.age);
 }
+
 
 bool operator < (Teacher obj1, Teacher obj2)
 {
 	return (obj1.age > obj2.age);
 }
 
-bool operator < (int & str, Teacher obj)
+bool operator < (int str, Teacher obj)
 {
 	return(str > obj.age);
+}
+
+istream& operator >> (istream& in, Teacher &teacher)
+{
+	string s;
+	getline(in, s, '\n'); // сделали чтобы, первый \n после кол-во учителей не мешал для считывания
+	getline(in, teacher.name, '\\');
+	getline(in, teacher.surname, '\\');
+	in >> teacher.age >> teacher.gender;
+	getline(in, teacher.faculty, '\\');
+	return in;
+}
+
+
+void printTeachers(Teacher *teacher, int countOfTeachers)
+{
+	for (int i = 0; i < countOfTeachers; i++)
+	{	
+		cout << teacher[i].name << "\t" << teacher[i].surname << "\t" <<
+			teacher[i].age << "\t" << teacher[i].gender << "\t" << teacher[i].faculty << endl;
+	}
 }

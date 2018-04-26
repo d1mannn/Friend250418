@@ -46,5 +46,11 @@
     <Text Include="in.txt">
       <Filter>Resource Files</Filter>
     </Text>
+    <Text Include="teacher.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="Exam.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>

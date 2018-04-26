@@ -51,6 +51,11 @@ void printStudents(Student * students, int countOfStudents)
 	cout << endl;
 }
 
+void printStudent(Student * students)
+{
+	cout << students->name << "\t" << students->surname << "\t" << students->age << "\t" << students->gender << "\t" << students->group << endl;
+}
+
 istream& operator >> (istream& in, Student &student)
 {	
 	string s;

@@ -1,0 +1,4 @@
+3
+teacher1\ s teacher1\ 45 female orientalistik\
+teacher2\ s teacher2\50 male journalist\
+teacher3\ s teacher3\ 50 male Inform Technology\

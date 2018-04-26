@@ -1,3 +1,3 @@
 2
-name1\ ss surname1\ 20 female 1
-name2\ surname2\ 25 male 1
+Student1\ Student surname1\ 20 female 1
+Student2\Student surname2\ 25 male 1
