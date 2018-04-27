@@ -97,3 +97,9 @@ void printTeachers(Teacher *teacher, int countOfTeachers)
 			teacher[i].age << "\t" << teacher[i].gender << "\t" << teacher[i].faculty << endl;
 	}
 }
+
+void printTecaher(Teacher &teacher)
+{
+	cout << teacher.name << "\t" << teacher.surname << "\t" <<
+		teacher.age << "\t" << teacher.gender << "\t" << teacher.faculty << endl;
+}

@@ -1,3 +1,12 @@
-2
-Student1\ Student surname1\ 20 female 1
-Student2\Student surname2\ 25 male 1
+11
+Pupkin\ Student surname1\ 20 female 1
+Coshanov\ Student surname2\ 24 male 2
+Student1\ Student surname1\ 23 female 3
+Student2\ Student surname2\ 22 male 1
+Student1\ Student surname1\ 21 female 2
+Student2\ Student surname2\ 18 male 3
+Student2\ Student surname2\ 17 male 2
+Student1\ Student surname1\ 26 female 3
+Student2\ Student surname2\ 25 male 1
+Student1\ Student surname1\ 19 female 2
+Student2\ Student surname2\ 27 male 3

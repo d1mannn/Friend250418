@@ -42,6 +42,23 @@ void PrintExams(Exam * exam, int countOfEx)
 	}
 }
 
+void PrintExam(Exam &exam)
+{
+		cout << "Teacher: " << exam.teacher_sname << "\tSubject: " << exam.subject
+			<< "\tStudent: " << exam.student_sname << "\tResult: " << exam.grade << endl;
+}
+
 Exam::~Exam()
 {
+}
+
+
+bool operator== (Exam exam, int grade)
+{
+	return (exam.grade == grade);
+}
+
+bool operator<= (Exam exam, int grade)
+{
+	return(exam.grade <= grade);
 }

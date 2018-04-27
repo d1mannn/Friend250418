@@ -14,6 +14,8 @@ public:
 	bool operator< (int age);
 	string getSname() { return surname; }
 	string getGender() { return gender; }
+	int getGroup() { return group; }
+	int TheYoungestStudent(int &age);
 private:
 	string name;
 	string surname;
@@ -21,11 +23,15 @@ private:
 	string gender;
 	int group;
 	friend void printStudents(Student * students, int countOfStudents);
-	friend void printStudent(Student * students);
+	friend void printStudent(Student &students);
 	friend istream& operator >> (istream& in, Student &student); //istream - входящий поток из файла в программу
 	friend bool operator==(string gender, Student obj); //принимает gender и сравнивает с obj
+	friend bool operator==(int group, Student obj);
+	friend bool operator == (Student obj, int grade);
 	friend bool operator !=(string gender, Student obj);
 	friend bool operator>(Student obj1, Student obj2);
+	friend int TheYoungestStudent(Student* obj, int &length);
+	friend int TheOldestStudent(Student* obj, int &length);
 	friend class Exam;
 };
 

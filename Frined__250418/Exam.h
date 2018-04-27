@@ -23,5 +23,8 @@ private:
 	string student_sname;
 	double grade;
 	friend void PrintExams(Exam *exam, int countOfEx);
+	friend bool operator== (Exam exam, int grade);
+	friend bool operator<= (Exam exam, int grade);
+	friend void PrintExam(Exam &exam);
 };
 

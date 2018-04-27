@@ -26,6 +26,7 @@ private:
 	friend bool operator < (Teacher obj1, Teacher obj2);
 	friend bool operator < (int str, Teacher obj);
 	friend void printTeachers(Teacher *teacher, int countOfTeachers);
+	friend void printTecaher(Teacher &teacher);
 	friend class Exam;
 };
 
